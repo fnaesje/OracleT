@@ -15,7 +15,7 @@
              }
          </fx:script>
 <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
-<gridLinesVisible>true</gridLinesVisible>
+<!-- <gridLinesVisible>true</gridLinesVisible> -->
 <Text text="Welcome" 
         GridPane.columnIndex="0" GridPane.rowIndex="0"
         GridPane.columnSpan="2"/>
@@ -31,7 +31,7 @@
  
     <PasswordField fx:id="passwordField" 
         GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-        <HBox spacing="10" alignment="bottom_right" 
+ <HBox spacing="10" alignment="bottom_right" 
         GridPane.columnIndex="1" GridPane.rowIndex="4">
         <Button text="Sign In"     
         onAction="handleSubmitButtonAction(event)"/>
@@ -40,7 +40,9 @@
 <Text fx:id="actiontarget"
        GridPane.columnIndex="0" GridPane.columnSpan="2"
  GridPane.halignment="RIGHT" GridPane.rowIndex="6"/>
- 
+ <stylesheets>
+    <URL value="@Login.css" />
+  </stylesheets>
 </GridPane>
 
 
